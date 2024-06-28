@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Auth.js (NextAuth) v5 Next.js Authentication
 
-## Getting Started
+This is a solution to [Master NextAuth v5: Next.js Authentication Made Easy Project](https://www.youtube.com/watch?v=4BjowsolXmw). I'm practicing and developing my coding competency by building projects after projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### The Challenge/User Stories
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Learn the latest version of next-auth v5!
 
-## Learn More
+### Screenshot
 
-To learn more about Next.js, take a look at the following resources:
+![](public/screenshot-desktop.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Links
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Solution URL: [https://github.com/traez/nextauth-v5-nextjs-authentication](https://github.com/traez/nextauth-v5-nextjs-authentication)
+- Live Site URL: [https://nextauth-v5-nextjs-authentication-trae-zeeofors-projects.vercel.app/](https://nextauth-v5-nextjs-authentication-trae-zeeofors-projects.vercel.app/)
 
-## Deploy on Vercel
+## My process
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Built with
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox and CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- Tailwind CSS
+- Typescript**
+- Nodejs (with/without Expressjs)
+- MongoDB**  
+- GraphQL**    
+- Redux Toolkit**  
+- Auth.js (NextAuth)   
+
+### What I learned
+   
+- **Random Base64-Encoded String Generation:**  
+`node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"`: This command generates a random base64-encoded string using Node.js's built-in capabilities.  
+`npx auth secret`: This command also generates a random base64-encoded string but leverages an external tool (auth).  
+Although both commands serve the same purpose, the first approach is more direct and uses Node.js's built-in functionality.
+- **auth.ts:**  
+This file configures the authentication mechanism, focusing on setting up and configuring the authentication logic using NextAuth. It defines how authentication should work, including the providers, callbacks, and other configuration details. 
+- **route.ts (Route Handler):**  
+This file sets up the API routes that handle authentication requests using the configured logic. It is responsible for exposing the authentication logic as API routes, using the handlers defined in auth.ts to create actual API endpoints that can be called from the client-side or other parts of the application. 
+- **middleware.ts:**  
+This file re-exports the auth middleware from auth.ts, enabling it to be used globally across the application to manage session lifetimes. It updates the session expiry time on every request to keep the user logged in for a longer duration. It wraps protected routes with authentication to ensure only authenticated users can access them.  
+- **Clerk vs. Auth.js Approach to Authentication:**  
+The Clerk approach to authentication simplifies the process by doing most of the heavy lifting, allowing you to easily integrate authentication ("plug and play"). On the other hand, the Auth.js approach requires more groundwork and configuration on your part. As you continue learning, you will explore all the available options to determine the best fit for your needs.  
+
+### Continued development
+
+- More projects; increased competence!
+
+### Useful resources
+
+Stackoverflow  
+YouTube  
+Google  
+ChatGPT
+
+## Author
+
+- Website - [Trae Zeeofor](https://github.com/traez)
+- Twitter - [@trae_z](https://twitter.com/trae_z)
+
+## Acknowledgments
+
+-Jehovah that keeps breath in my lungs
