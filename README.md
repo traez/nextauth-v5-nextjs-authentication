@@ -61,8 +61,21 @@ This file configures the authentication mechanism, focusing on setting up and co
 This file sets up the API routes that handle authentication requests using the configured logic. It is responsible for exposing the authentication logic as API routes, using the handlers defined in auth.ts to create actual API endpoints that can be called from the client-side or other parts of the application. 
 - **middleware.ts:**  
 This file re-exports the auth middleware from auth.ts, enabling it to be used globally across the application to manage session lifetimes. It updates the session expiry time on every request to keep the user logged in for a longer duration. It wraps protected routes with authentication to ensure only authenticated users can access them.  
-- **Clerk vs. Auth.js Approach to Authentication:**  
-The Clerk approach to authentication simplifies the process by doing most of the heavy lifting, allowing you to easily integrate authentication ("plug and play"). On the other hand, the Auth.js approach requires more groundwork and configuration on your part. As you continue learning, you will explore all the available options to determine the best fit for your needs.  
+- **Google Cloud Console and Resource Management:**  
+Google Cloud Console is your web-based control panel for managing resources in Google Cloud Platform (GCP). It lets you:  
+1) Launch and manage cloud services like compute, storage, databases, and machine learning tools.  
+2) Monitor and optimize your cloud resources for performance and cost.  
+3) Secure your cloud environment with access controls and permissions management.  
+Think of it as the mission control for your projects running on Google's cloud infrastructure.  
+- **Google Cloud Configuration for Authentication:**    
+**The Google Cloud Console** configuration is needed for setting up the **Google Provider** in your application, similar to how Developer Settings are configured in GitHub for the **GitHub Provider**.  
+In the context of **The Clerk vs. Auth.js Approach to Authentication**:
+The Clerk approach simplifies the process by handling most of the heavy lifting, allowing you to easily integrate authentication ("plug and play").  
+The Auth.js approach requires more groundwork and configuration on your part. While Clerk is "drag and drop" (as Clerk server handles code for authentication), Auth.js (NextAuth) requires extra work and configuration in your Provider settings. This provides more control and potentially higher security.  
+For setting up the Google Provider, I defined the `Client ID` and `Client Secret` in the `.env` file.
+- **Configuring Next.js Image Component for Security and Optimization:**  
+The `next/image component` in Next.js requires explicit configuration for hostnames, such as `avatars.githubusercontent.com`, in your `next.config.js` file for security and optimization purposes.  
+For my GitHub project, I used the newer `remotePatterns` property and set the pathname to `'**'` (double asterisk), which matches any path within the trusted hostname. This configuration can also omit the port and pathname for simplicity and security.
 
 ### Continued development
 
