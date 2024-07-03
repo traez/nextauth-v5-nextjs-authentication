@@ -1,6 +1,6 @@
 # Auth.js (NextAuth) v5 Next.js Authentication
 
-This is a solution to [Master NextAuth v5: Next.js Authentication Made Easy Project](https://www.youtube.com/watch?v=4BjowsolXmw). I'm practicing and developing my coding competency by building projects after projects.
+This is a combined solution to the [Master NextAuth v5: Next.js Authentication Made Easy Project](https://www.youtube.com/watch?v=4BjowsolXmw) and [Next.js Authentication With Next-Auth V5 Project](https://www.youtube.com/watch?v=O8Ae6MC5bf4). I'm practicing and developing my coding competency by building projects after projects.
 
 ## Table of contents
 
