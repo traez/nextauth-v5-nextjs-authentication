@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { auth } from "@/auth";
-import LoginForm from "@/components/LoginForm";
+import SocialsLogin from "@/components/SocialsLogin";
 import Logout from "@/components/Logout";
 
 export default async function Header() {
@@ -20,7 +20,7 @@ export default async function Header() {
           <Link href="home" className="text-gray-300 hover:text-black mr-4">
             Home
           </Link>
-          {session?.user?.name ? <Logout /> : <LoginForm />}
+          {session?.user? <Logout /> : <SocialsLogin />}
         </div>
       </nav>
     </>
