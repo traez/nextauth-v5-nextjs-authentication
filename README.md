@@ -75,7 +75,13 @@ The Auth.js approach requires more groundwork and configuration on your part. Wh
 For setting up the Google Provider, I defined the `Client ID` and `Client Secret` in the `.env` file.
 - **Configuring Next.js Image Component for Security and Optimization:**  
 The `next/image component` in Next.js requires explicit configuration for hostnames, such as `avatars.githubusercontent.com`, in your `next.config.js` file for security and optimization purposes.  
-For my GitHub project, I used the newer `remotePatterns` property and set the pathname to `'**'` (double asterisk), which matches any path within the trusted hostname. This configuration can also omit the port and pathname for simplicity and security.
+For my GitHub project, I used the newer `remotePatterns` property and set the pathname to `'**'` (double asterisk), which matches any path within the trusted hostname. This configuration can also omit the port and pathname for simplicity and security.  
+- **FormData in RegistrationForm.jsx:**   
+The line `const formData = new FormData(event.currentTarget);` creates a `formData` object from the form element that triggered the submit event. This captures the current state of the form's input values. The `formData` object contains key-value pairs representing the form fields and their values, ready for further processing, such as sending via the `fetch` API. 
+- **Using MongoDB Compass:**  
+MongoDB Compass allows you to easily create and manage databases and collections without writing any code. This feature is particularly useful for quick setups, prototyping, or when you want to manage your database visually. 
+- **Import Cost Extension in Visual Studio Code:**    
+The Import Cost extension helps you monitor bundle size by displaying the estimated size of imported packages right next to the import statements in your code. This allows you to quickly identify potentially large dependencies that might be bloating your application.   
 
 ### Continued development
 
