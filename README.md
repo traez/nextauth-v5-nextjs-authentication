@@ -1,6 +1,6 @@
 # Auth.js (NextAuth) v5 Next.js Authentication
 
-This is a combined solution to the [Master NextAuth v5: Next.js Authentication Made Easy Project](https://www.youtube.com/watch?v=4BjowsolXmw) and [Next.js Authentication With Next-Auth V5 Project](https://www.youtube.com/watch?v=O8Ae6MC5bf4). I'm practicing and developing my coding competency by building projects after projects.
+This is a 4-part combined solution to the [Master NextAuth v5: Next.js Authentication Made Easy Project](https://www.youtube.com/watch?v=4BjowsolXmw), [Next.js Authentication With Next-Auth V5 Project](https://www.youtube.com/watch?v=O8Ae6MC5bf4), [Next.js Authentication With Next-Auth V5 Credential Provider Project](https://www.youtube.com/watch?v=4m7u7zGbdTI) and [Next.js Authentication || Register User To MongoDB With Next-Auth V5 Project](https://www.youtube.com/watch?v=5kmZAqc2Jeg). I'm practicing and developing my coding competency by building projects after projects.
 
 ## Table of contents
 
